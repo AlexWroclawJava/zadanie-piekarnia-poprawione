@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart Content</title>
+
+</head>
+<body>
+
+<h1>Dziękujemy za dodanie produktów</h1>
+
+<p> <a href="success.html">Kontynuuj zakupy</a> </p>
+<p> <a href="/koszyk">Koszyk</a> </p>
+<p> <a href="/koszyk/paragon">Podsumowanie zakupów</a> </p>
+
+<script>
+    <% if(!model.isSyncFinished()) {%>
+    setTimeout(function () {
+        window.location.reload(1);
+    }, 500);
+    <% }%>
+</script>
+
+    <p>by Alex Szlachcic</p>
+
+</body>
+</html>
